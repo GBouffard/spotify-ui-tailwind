@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function PlaylistCard({ albumInfo }) {
-    const {band, album, imageUrl, imageAlt} = albumInfo
+export default function PlaylistCard({ data }) {
+    const {name, imageUrl, creator} = data
 
     return (
         <div>
-            <div>{band} - {album}</div>
-            <img src={imageUrl} alt={imageAlt} />
+            <img className="w-12 h-12" src={imageUrl} />
+            <div>{name} - {creator}</div>
         </div>
     );
 }
