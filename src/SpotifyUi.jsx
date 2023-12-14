@@ -1,24 +1,29 @@
-import React from "react";
+import React from 'react'
 
-import albumsInfo from "./data/albumsInfo";
-import SongCard from "./components/SongCard";
-import LeftPanel from "./components/LeftPanel";
-import RightPanel from "./components/RightPanel";
+import songsList from './data/songsList'
+import SongCard from './components/SongCard'
+import LeftPanel from './components/LeftPanel'
+import MiddleTopPanel from './components/MiddleTopPanel'
+import RightPanel from './components/RightPanel'
+import MediaPlayer from './components/MediaPlayer'
 
-export default function SpotifyUi() {
+export default function SpotifyUi () {
   return (
-    <div className="bg-gray-950 flex w-full">
-      <LeftPanel/>
+    <div className='bg-gray-950 flex w-full'>
+      <LeftPanel />
 
-      <div className="bg-blue-200 grow w-2/4">
-        {albumsInfo.map((data, index) => (
-          <SongCard data={data} key={`album ${index}`} />
+      <div className='bg-blue-200 grow w-2/4'>
+
+        <MiddleTopPanel />
+
+        {songsList.map((data, index) => (
+          <SongCard data={data} key={`album ${index}`} index={index} />
         ))}
       </div>
 
-      <RightPanel/>
+      <RightPanel />
 
-      <div className="bg-red-500 fixed bottom-0 w-full">Music Bar</div>
+      <MediaPlayer />
     </div>
-  );
+  )
 }

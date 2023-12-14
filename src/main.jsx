@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import SpotifyUi from "./SpotifyUi";
-import "./css/tailwind.css";
+import SpotifyUi from './SpotifyUi'
+import './css/tailwind.css'
 
-ReactDOM.render(<SpotifyUi />, document.getElementById("root"));
+ReactDOM.render(<SpotifyUi />, document.getElementById('root'))
