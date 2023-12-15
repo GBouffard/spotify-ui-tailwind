@@ -32,19 +32,23 @@ export default function MediaPlayer () {
 
       <div className='flex w-2/5 flex-col'>
         <div className='flex justify-center items-center mb-2'>
-          <span className='mx-3'><Random fill='springgreen' /></span>
-          <span className='mx-3'><Previous fill='grey' /></span>
-          <span className='mx-3'><Play size={32} /></span>
-          <span className='mx-3'><Next fill='grey' /></span>
-          <span className='mx-3'><Repeat fill='grey' /></span>
+          <span className='mx-3 cursor-pointer'><Random fill='springgreen' /></span>
+          <span className='mx-3 cursor-pointer'><Previous fill='grey' /></span>
+          <span className='mx-3 cursor-pointer'><Play size={32} /></span>
+          <span className='mx-3 cursor-pointer'><Next fill='grey' /></span>
+          <span className='mx-3 cursor-pointer'><Repeat fill='grey' /></span>
         </div>
         <div className='w-full flex items-center text-xs text-neutral-400'>
           <span className='mx-2'>0:00</span><div className='bg-neutral-700 w-full grow h-1 rounded-full' /><span className='mx-2'>5:13</span>
         </div>
       </div>
 
-      <div className='flex'>
-        <Radio /><Carousel /><Speaker /><Expand />
+      <div className='flex justify-center items-center'>
+        <span className='mx-3 cursor-pointer'><Carousel fill='grey' size='5' /></span>
+        <span className='mx-3 cursor-pointer'><Radio fill='grey' size='5' /></span>
+        <span className='mx-3 cursor-pointer'><Speaker fill='grey' size='5' /></span>
+        <div className='bg-neutral-400 w-20 grow h-1 rounded-full hover:bg-green-600 hover:cursor-pointer' />
+        <span className='mx-3 cursor-pointer'><Expand fill='grey' size='5' /></span>
       </div>
     </div>
   )
