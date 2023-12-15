@@ -8,11 +8,12 @@ import Radio from './icons/Radio'
 import Speaker from './icons/Speaker'
 import Expand from './icons/Expand'
 import Carousel from './icons/Carousel'
+import Repeat from './icons/Repeat'
 
 const fakeData = {
   band: 'Metallica',
   song: 'Battery',
-  imageUrl: '/img/m1.jpg',
+  imageUrl: '/img/m1.jpg'
 }
 
 export default function MediaPlayer () {
@@ -29,13 +30,22 @@ export default function MediaPlayer () {
         </div>
       </div>
 
-      <div className='flex'>
- <Check fill='green' /><Random /><Previous /><Play /><Next />
+      <div className='flex w-2/5 flex-col'>
+        <div className='flex justify-center items-center mb-2'>
+          <span className='mx-3'><Random fill='springgreen' /></span>
+          <span className='mx-3'><Previous fill='grey' /></span>
+          <span className='mx-3'><Play size={32} /></span>
+          <span className='mx-3'><Next fill='grey' /></span>
+          <span className='mx-3'><Repeat fill='grey' /></span>
+        </div>
+        <div className='w-full flex items-center text-xs text-neutral-400'>
+          <span className='mx-2'>0:00</span><div className='bg-neutral-700 w-full grow h-1 rounded-full' /><span className='mx-2'>5:13</span>
+        </div>
       </div>
 
       <div className='flex'>
-      <Radio /><Carousel /><Speaker /><Expand />
+        <Radio /><Carousel /><Speaker /><Expand />
       </div>
-     </div>
+    </div>
   )
 }
