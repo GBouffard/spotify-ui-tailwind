@@ -9,8 +9,8 @@ export default function SongCard ({ data, index }) {
       <div className='w-2/5 grow flex items-center'>
         <img className='w-10 h-10 rounded-md mr-3' src={imageUrl} />
         <div>
-          <div className="text-neutral-100 font-normal text-sm">{song || 'SONG'}</div>
-          <div className="mt-1 hover:text-white hover:underline hover:cursor-pointer">{band}</div>
+          <div className='text-neutral-100 font-normal text-sm'>{song || 'SONG'}</div>
+          <div className='mt-1 hover:text-white hover:underline hover:cursor-pointer'>{band}</div>
         </div>
       </div>
       <div className='w-1/5 grow hover:text-white hover:underline hover:cursor-pointer'>{album}</div>

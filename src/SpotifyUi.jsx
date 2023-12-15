@@ -16,10 +16,10 @@ export default function SpotifyUi () {
 
         <MiddleTopPanel />
 
-    <div className='mx-3'>
-        {songsList.map((data, index) => (
-          <SongCard data={data} key={`album ${index}`} index={index} />
-        ))}
+        <div className='mx-3'>
+          {songsList.map((data, index) => (
+            <SongCard data={data} key={`album ${index}`} index={index} />
+          ))}
         </div>
       </div>
 

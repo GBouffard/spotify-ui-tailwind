@@ -16,7 +16,7 @@ const defaultData = {
 const defaultNext = {
   nextBand: 'Nirvana',
   nextSong: 'Smells Like Teen Spirit',
-  nextImageUrl: '/img/n.jpg',
+  nextImageUrl: '/img/n.jpg'
 }
 
 export default function Rightpanel ({ data = defaultData, nextData = defaultNext }) {
@@ -50,7 +50,7 @@ export default function Rightpanel ({ data = defaultData, nextData = defaultNext
         <div className='text-neutral-100 py-3 px-2 font-semibold tracking-wide'><span className='hover:underline'>{band}</span></div>
         <div className='flex justify-between px-2'>
           <div className='text-neutral-400 font-light text-s'>10,000,000 monthly listeners</div>
-          <button className='hover:border-neutral-400 text-xs tracking-wide text-neutral-100 font-normal border-neutral-700 border-2 px-3 py-1 rounded-full' >Follow</button>
+          <button className='hover:border-neutral-400 text-xs tracking-wide text-neutral-100 font-normal border-neutral-700 border-2 px-3 py-1 rounded-full'>Follow</button>
         </div>
         <div className='px-2 py-3 text-neutral-400 font-normal text-xs'>{artistBiography}</div>
       </div>
@@ -65,12 +65,11 @@ export default function Rightpanel ({ data = defaultData, nextData = defaultNext
         <div className='flex items-center'>
           <img className='w-10 h-10 rounded-md mr-3' src={nextImageUrl} />
           <div className='flex bg-blue- flex-col'>
-            <div className="text-neutral-100 font-normal text-sm"><span className='hover:underline hover:cursor-pointer'>{nextSong}</span></div>
+            <div className='text-neutral-100 font-normal text-sm'><span className='hover:underline hover:cursor-pointer'>{nextSong}</span></div>
             <div className=' text-neutral-400 font-normal text-xs'><span className='hover:underline hover:cursor-pointer'>{nextBand}</span></div>
           </div>
         </div>
       </div>
-
 
     </div>
   )
