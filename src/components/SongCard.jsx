@@ -7,9 +7,9 @@ export default function SongCard ({ data, index }) {
     <div className='flex justify-between items-center'>
       <div className='flex w-10 justify-center'>{index + 1}</div>
       <div className='w-2/5 grow flex items-center'>
-        <img className='w-10 h-10' src={imageUrl} />
+        <img className='w-10 h-10 rounded-md mr-3' src={imageUrl} />
         <div>
-          <div>{song || 'SONG'}</div>
+          <div className="text-neutral-100 font-normal text-sm">{song || 'SONG'}</div>
           <div>{band}</div>
         </div>
       </div>
