@@ -30,7 +30,7 @@ export default function LeftPanel () {
         <button className='bg-neutral-700 text-xs text-white rounded-full px-3 py-1 font-light tracking-wide'>Playlists</button>
       </div>
 
-      <div className='space-y-2 bg-neutral-900'>
+      <div className='space-y-2 bg-neutral-900 overflow-y-scroll h-screen'>
         <div className={`${sharedClass}w-full justify-between`}>
           <Search />
           <div>

@@ -16,7 +16,7 @@ export default function SpotifyUi () {
 
         <MiddleTopPanel />
 
-        <div className='mx-3'>
+        <div className='mx-3 overflow-y-scroll h-screen'>
           {songsList.map((data, index) => (
             <SongCard data={data} key={`album ${index}`} index={index} />
           ))}

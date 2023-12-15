@@ -315,15 +315,6 @@ export default [
     dateAdded: '13 Sep 2017'
   },
   {
-    song: '',
-    duration: '',
-    band: '30 Seconds to Mars',
-    album: '30 Seconds to Mars',
-    imageUrl: '/img/Thirty_Seconds_to_Mars_-_30_Seconds_to_Mars.jpg',
-    imageAlt: '30 Seconds to Mars album cover',
-    dateAdded: '25 Jul 2017'
-  },
-  {
     song: "It's been a while",
     duration: '4:24',
     band: 'Staind',

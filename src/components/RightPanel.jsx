@@ -28,7 +28,7 @@ export default function Rightpanel ({ data = defaultData, nextData = defaultNext
   } = nextData
 
   return (
-    <div className='bg-neutral-900 grow w-1/4 px-3 rounded-lg m-2 text-neutral-100'>
+    <div className='bg-neutral-900 grow w-1/4 px-3 rounded-lg m-2 text-neutral-100 overflow-y-scroll h-screen'>
       <div className='flex justify-between mt-2 mb-4'>
         <span>{playlist}</span>
         <span className='hover:bg-neutral-700 cursor-pointer'><Close /></span>
@@ -39,7 +39,7 @@ export default function Rightpanel ({ data = defaultData, nextData = defaultNext
           <div className='text-2xl tracking-wide font-normal hover:underline hover:cursor-pointer'>{song}</div>
           <div className='text-neutral-400 font-light hover:text-white hover:underline hover:cursor-pointer'>{band}</div>
         </div>
-        <div className='flex items-center'><Check fill='green' /><Menu /></div>
+        <div className='flex items-center'><span className='mr-2'><Check fill='green' /></span><Menu /></div>
       </div>
 
       <div className='relative hover:cursor-pointer '>
