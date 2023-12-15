@@ -38,7 +38,7 @@ export default function MiddleTopPanel () {
         <div className='flex'><Search /><span>Artist</span><List /></div>
       </div>
 
-      <div className='flex justify-between items-center bg-green-600'>
+      <div className='flex justify-between items-center bg-green-600 mx-3'>
         <div className='flex w-10 justify-center'>#</div>
         <div className='w-2/5 grow'>Artist</div>
         <div className='w-1/5 grow'>Album</div>

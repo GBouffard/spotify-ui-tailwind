@@ -12,13 +12,15 @@ export default function SpotifyUi () {
     <div className='bg-gray-950 flex w-full'>
       <LeftPanel />
 
-      <div className='bg-blue-200 grow w-2/4'>
+      <div className='bg-neutral-900 grow w-2/4'>
 
         <MiddleTopPanel />
 
+    <div className='mx-3'>
         {songsList.map((data, index) => (
           <SongCard data={data} key={`album ${index}`} index={index} />
         ))}
+        </div>
       </div>
 
       <RightPanel />
