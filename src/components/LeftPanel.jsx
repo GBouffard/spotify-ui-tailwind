@@ -19,7 +19,7 @@ export default function LeftPanel () {
       </div>
       <div className={`${sharedClass} rounded-t-lg w-full justify-between`}>
         <div className='flex'>
-          <span className='mr-4'><Library /></span>
+          <span className='mr-4'><Library fill='grey' /></span>
           Your library
         </div>
         <div>

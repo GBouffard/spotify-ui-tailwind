@@ -13,8 +13,6 @@ import Menu from './icons/Menu'
 import Search from './icons/Search'
 import List from './icons/List'
 
-{ /* <div className='mt-2 bg-gradient-to-b from-yellow-600 to-neutral-900 rounded-t-lg'> */ }
-
 export default function MiddleTopPanel () {
   return (
     <div className='mt-2 bg-gradient-to-b from-yellow-600 to-neutral-900 rounded-t-lg'>
@@ -48,9 +46,23 @@ export default function MiddleTopPanel () {
         </div>
       </div>
 
-      <div className='flex justify-between'>
-        <div className='flex'><Play /><Random /><Download /><PlusUser /><Menu /></div>
-        <div className='flex'><Search /><span>Artist</span><List /></div>
+      <div className='flex justify-between items-center bg-slate-900 bg-opacity-20 py-5 h-24'>
+        <div className='flex items-center mx-5'>
+          <span className='bg-black rounded-full mr-6 cursor-pointer'>
+            <Play size={50} fill='springgreen' />
+          </span>
+          <span className='mr-6 cursor-pointer'><Random fill='springgreen' size={32} /></span>
+          <span className='mr-6 cursor-pointer'><Download fill='grey' /></span>
+          <span className='mr-6 cursor-pointer'><PlusUser fill='grey' /></span>
+          <span className='cursor-pointer'><Menu fill='grey' /></span>
+        </div>
+        <div className='flex items-center pr-7'>
+          <span className='mr-4 bg-neutral-900 bg-opacity-0 rounded-full p-1 hover:bg-opacity-50 cursor-pointer'><Search /></span>
+          <span className='hover:text-neutral-100 flex items-center'>
+            <span className='text-xs font-light text-neutral-400 tracking-normal mr-2 hover:text-neutral-100 cursor-pointer'>Artist</span>
+            <span className='cursor-pointer'><List /></span>
+          </span>
+        </div>
       </div>
 
       <div className='flex justify-between items-center bg-green-600 mx-3'>
