@@ -65,12 +65,12 @@ export default function MiddleTopPanel () {
         </div>
       </div>
 
-      <div className='flex justify-between items-center bg-green-600 mx-3'>
-        <div className='flex w-10 justify-center'>#</div>
+      <div className='flex justify-between items-center mx-5 text-neutral-400 font-normal text-xs border-b-2 border-neutral-800 pb-2 mb-2'>
+        <div className='flex w-10 justify-center mr-2'>#</div>
         <div className='w-2/5 grow'>Artist</div>
         <div className='w-1/5 grow'>Album</div>
         <div className='w-1/5 grow'>Date Added</div>
-        <div className='w-1/5 grow justify-center flex'><Time /></div>
+        <div className='w-1/5 grow justify-center flex pl-5'><Time /></div>
       </div>
     </div>
   )
